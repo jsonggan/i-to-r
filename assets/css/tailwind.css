@@ -618,14 +618,6 @@ body {
   left: -2.25rem;
 }
 
-.-right-6{
-  right: -1.5rem;
-}
-
-.-top-6{
-  top: -1.5rem;
-}
-
 .bottom-0{
   bottom: 0px;
 }
@@ -882,14 +874,6 @@ body {
   margin-right: 1.5rem;
 }
 
-.mt-0{
-  margin-top: 0px;
-}
-
-.mt-0\.5{
-  margin-top: 0.125rem;
-}
-
 .mt-1{
   margin-top: 0.25rem;
 }
@@ -1070,6 +1054,10 @@ body {
   max-width: 270px;
 }
 
+.max-w-\[300px\]{
+  max-width: 300px;
+}
+
 .max-w-\[370px\]{
   max-width: 370px;
 }
@@ -1134,6 +1122,14 @@ body {
   max-width: 100%;
 }
 
+.max-w-\[70px\]{
+  max-width: 70px;
+}
+
+.flex-1{
+  flex: 1 1 0%;
+}
+
 .-translate-y-1\/2{
   --tw-translate-y: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1161,6 +1157,10 @@ body {
 
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.cursor-default{
+  cursor: default;
 }
 
 .cursor-pointer{
@@ -1336,7 +1336,7 @@ body {
 
 .border-primary{
   --tw-border-opacity: 1;
-  border-color: rgb(55 88 249 / var(--tw-border-opacity));
+  border-color: rgb(94 62 208 / var(--tw-border-opacity));
 }
 
 .border-stroke{
@@ -1399,15 +1399,15 @@ body {
 
 .bg-primary{
   --tw-bg-opacity: 1;
-  background-color: rgb(55 88 249 / var(--tw-bg-opacity));
+  background-color: rgb(94 62 208 / var(--tw-bg-opacity));
 }
 
 .bg-primary\/5{
-  background-color: rgb(55 88 249 / 0.05);
+  background-color: rgb(94 62 208 / 0.05);
 }
 
 .bg-primary\/\[0\.08\]{
-  background-color: rgb(55 88 249 / 0.08);
+  background-color: rgb(94 62 208 / 0.08);
 }
 
 .bg-secondary{
@@ -1433,8 +1433,9 @@ body {
   background-color: rgb(255 255 255 / 0.1);
 }
 
-.bg-white\/\[0\.12\]{
-  background-color: rgb(255 255 255 / 0.12);
+.bg-blue-100{
+  --tw-bg-opacity: 1;
+  background-color: rgb(219 234 254 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-20{
@@ -1619,11 +1620,6 @@ body {
   padding-bottom: 10px;
 }
 
-.py-\[14px\]{
-  padding-top: 14px;
-  padding-bottom: 14px;
-}
-
 .py-\[30px\]{
   padding-top: 30px;
   padding-bottom: 30px;
@@ -1690,6 +1686,10 @@ body {
 
 .pt-\[120px\]{
   padding-top: 120px;
+}
+
+.text-left{
+  text-align: left;
 }
 
 .text-center{
@@ -1854,7 +1854,7 @@ body {
 
 .text-primary{
   --tw-text-opacity: 1;
-  color: rgb(55 88 249 / var(--tw-text-opacity));
+  color: rgb(94 62 208 / var(--tw-text-opacity));
 }
 
 .text-white{
@@ -1862,8 +1862,9 @@ body {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-white\/60{
-  color: rgb(255 255 255 / 0.6);
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(33 43 54 / var(--tw-text-opacity));
 }
 
 .text-opacity-70{
@@ -1877,12 +1878,6 @@ body {
 .shadow{
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.shadow-1{
-  --tw-shadow: 0px 1px 3px 0px rgba(166, 175, 195, 0.40);
-  --tw-shadow-colored: 0px 1px 3px 0px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -1929,7 +1924,7 @@ body {
 
 .ring-primary{
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(55 88 249 / var(--tw-ring-opacity));
+  --tw-ring-color: rgb(94 62 208 / var(--tw-ring-opacity));
 }
 
 .blur{
@@ -2017,7 +2012,7 @@ body {
 
 .sticky #navbarCollapse li > a:hover{
   --tw-text-opacity: 1;
-  color: rgb(55 88 249 / var(--tw-text-opacity));
+  color: rgb(94 62 208 / var(--tw-text-opacity));
   opacity: 1;
 }
 
@@ -2028,7 +2023,7 @@ body {
 
 :is(.dark .sticky #navbarCollapse li > a:hover){
   --tw-text-opacity: 1;
-  color: rgb(55 88 249 / var(--tw-text-opacity));
+  color: rgb(94 62 208 / var(--tw-text-opacity));
 }
 
 #navbarCollapse li .ud-menu-scroll.active{
@@ -2037,7 +2032,7 @@ body {
 
 .sticky #navbarCollapse li .ud-menu-scroll.active{
   --tw-text-opacity: 1;
-  color: rgb(55 88 249 / var(--tw-text-opacity));
+  color: rgb(94 62 208 / var(--tw-text-opacity));
   opacity: 1;
 }
 
@@ -2048,7 +2043,7 @@ body {
 
 .sticky .loginBtn:hover{
   --tw-text-opacity: 1;
-  color: rgb(55 88 249 / var(--tw-text-opacity));
+  color: rgb(94 62 208 / var(--tw-text-opacity));
   opacity: 1;
 }
 
@@ -2059,12 +2054,12 @@ body {
 
 :is(.dark .sticky .loginBtn:hover){
   --tw-text-opacity: 1;
-  color: rgb(55 88 249 / var(--tw-text-opacity));
+  color: rgb(94 62 208 / var(--tw-text-opacity));
 }
 
 .sticky .signUpBtn{
   --tw-bg-opacity: 1;
-  background-color: rgb(55 88 249 / var(--tw-bg-opacity));
+  background-color: rgb(94 62 208 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -2128,7 +2123,7 @@ body {
 .common-carousel .swiper-button-next:hover,
 .common-carousel .swiper-button-prev:hover{
   --tw-bg-opacity: 1;
-  background-color: rgb(55 88 249 / var(--tw-bg-opacity));
+  background-color: rgb(94 62 208 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
   --tw-shadow: 0 0 #0000;
@@ -2183,7 +2178,7 @@ body {
 
 .hover\:border-primary:hover{
   --tw-border-opacity: 1;
-  border-color: rgb(55 88 249 / var(--tw-border-opacity));
+  border-color: rgb(94 62 208 / var(--tw-border-opacity));
 }
 
 .hover\:bg-\[\#0BB489\]:hover{
@@ -2201,42 +2196,18 @@ body {
   background-color: rgb(17 25 40 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-gray-2:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-primary:hover{
   --tw-bg-opacity: 1;
-  background-color: rgb(55 88 249 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-white:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-opacity-100:hover{
-  --tw-bg-opacity: 1;
+  background-color: rgb(94 62 208 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-opacity-90:hover{
   --tw-bg-opacity: 0.9;
 }
 
-.hover\:text-body-color:hover{
-  --tw-text-opacity: 1;
-  color: rgb(99 115 129 / var(--tw-text-opacity));
-}
-
-.hover\:text-dark:hover{
-  --tw-text-opacity: 1;
-  color: rgb(17 25 40 / var(--tw-text-opacity));
-}
-
 .hover\:text-primary:hover{
   --tw-text-opacity: 1;
-  color: rgb(55 88 249 / var(--tw-text-opacity));
+  color: rgb(94 62 208 / var(--tw-text-opacity));
 }
 
 .hover\:text-white:hover{
@@ -2254,7 +2225,7 @@ body {
 
 .focus\:border-primary:focus{
   --tw-border-opacity: 1;
-  border-color: rgb(55 88 249 / var(--tw-border-opacity));
+  border-color: rgb(94 62 208 / var(--tw-border-opacity));
 }
 
 .focus\:border-white:focus{
@@ -2297,7 +2268,7 @@ body {
 
 .group:hover .group-hover\:text-primary{
   --tw-text-opacity: 1;
-  color: rgb(55 88 249 / var(--tw-text-opacity));
+  color: rgb(94 62 208 / var(--tw-text-opacity));
 }
 
 .group:hover .group-hover\:text-white{
@@ -2369,12 +2340,12 @@ body {
 
 :is(.dark .dark\:hover\:border-primary:hover){
   --tw-border-opacity: 1;
-  border-color: rgb(55 88 249 / var(--tw-border-opacity));
+  border-color: rgb(94 62 208 / var(--tw-border-opacity));
 }
 
 :is(.dark .dark\:hover\:text-primary:hover){
   --tw-text-opacity: 1;
-  color: rgb(55 88 249 / var(--tw-text-opacity));
+  color: rgb(94 62 208 / var(--tw-text-opacity));
 }
 
 :is(.dark .dark\:hover\:text-white:hover){
@@ -2384,7 +2355,7 @@ body {
 
 :is(.dark .dark\:focus\:border-primary:focus){
   --tw-border-opacity: 1;
-  border-color: rgb(55 88 249 / var(--tw-border-opacity));
+  border-color: rgb(94 62 208 / var(--tw-border-opacity));
 }
 
 @media (min-width: 540px){
@@ -2569,12 +2540,24 @@ body {
     width: 58.333333%;
   }
 
+  .md\:max-w-\[600px\]{
+    max-width: 600px;
+  }
+
+  .md\:flex-row{
+    flex-direction: row;
+  }
+
   .md\:justify-start{
     justify-content: flex-start;
   }
 
   .md\:justify-end{
     justify-content: flex-end;
+  }
+
+  .md\:gap-4{
+    gap: 1rem;
   }
 
   .md\:border-b{
@@ -2593,6 +2576,10 @@ body {
   .md\:py-\[120px\]{
     padding-top: 120px;
     padding-bottom: 120px;
+  }
+
+  .md\:pb-20{
+    padding-bottom: 5rem;
   }
 
   .md\:pt-\[130px\]{
