@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -12,6 +12,15 @@
     />
     <link rel="stylesheet" href="assets/css/animate.css" />
     <link rel="stylesheet" href="assets/css/tailwind.css" />
+    <meta
+      name="description"
+      content="I To R offers web and mobile app development, data automation, and cloud hosting services. Our frontend and backend use React, Next.js, PHP, Laravel, Express.js, React Native, Flutter, Java, JavaScript, TypeScript, Ruby on Rails, HTML, CSS, Tailwind. We are located in Singapore. We help to host your application on AWS, Google Cloud, Azure, Oracle and more cloud services of your choice. Based in Singapore with 3 years of experience."
+    />
+    <meta name="author" content="I To R" />
+    <meta
+      name="keywords"
+      content="web development, mobile app development, data automation, cloud hosting, React, Next.js, Laravel, Singapore"
+    />
 
     <!-- ==== WOW JS ==== -->
     <script src="assets/js/wow.min.js"></script>
@@ -23,33 +32,38 @@
   <body>
     <!-- ====== Navbar Section Start -->
     <div
-      class="ud-header absolute left-0 top-0 z-40 flex w-full items-center bg-transparent"
+      class="absolute top-0 left-0 z-40 flex items-center w-full bg-transparent ud-header py-3"
     >
       <div class="container">
-        <div class="relative -mx-4 flex items-center justify-between">
-          <div class="w-60 max-w-full px-4">
-            <a href="index.html" class="navbar-logo block w-full py-5">
+        <div class="relative flex items-center justify-between -mx-4">
+          <div class="max-w-full px-4 w-48">
+            <a href="index.html" class="block w-full navbar-logo">
+              <img
+                src="assets/images/logo/logo.svg"
+                alt="logo"
+                class="w-full dark:hidden"
+              />
               <img
                 src="assets/images/logo/logo-white.svg"
                 alt="logo"
-                class="header-logo w-full"
+                class="hidden w-full dark:block"
               />
             </a>
           </div>
-          <div class="flex w-full items-center justify-between px-4">
+          <div class="flex items-center justify-between w-full px-4">
             <div>
               <button
                 id="navbarToggler"
                 class="absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden"
               >
                 <span
-                  class="relative my-[6px] block h-[2px] w-[30px] bg-white"
+                  class="relative my-[6px] block h-[2px] w-[30px] bg-dark dark:bg-white"
                 ></span>
                 <span
-                  class="relative my-[6px] block h-[2px] w-[30px] bg-white"
+                  class="relative my-[6px] block h-[2px] w-[30px] bg-dark dark:bg-white"
                 ></span>
                 <span
-                  class="relative my-[6px] block h-[2px] w-[30px] bg-white"
+                  class="relative my-[6px] block h-[2px] w-[30px] bg-dark dark:bg-white"
                 ></span>
               </button>
               <nav
@@ -57,58 +71,58 @@
                 class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg dark:bg-dark-2 lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:px-4 lg:py-0 lg:shadow-none dark:lg:bg-transparent xl:px-6"
               >
                 <ul class="blcok lg:flex 2xl:ml-20">
-                  <li class="group relative">
+                  <li class="relative group">
                     <a
-                      href="#home"
-                      class="ud-menu-scroll mx-8 flex py-2 text-base font-medium text-dark group-hover:text-primary dark:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70"
+                      href="index.html"
+                      class="flex py-2 mx-8 text-base font-medium ud-menu-scroll text-dark group-hover:text-primary dark:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-body-color dark:lg:text-dark-6"
                     >
                       Home
                     </a>
                   </li>
-                  <li class="group relative">
+                  <li class="relative group">
                     <a
-                      href="#about"
-                      class="ud-menu-scroll mx-8 flex py-2 text-base font-medium text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10"
+                      href="/#about"
+                      class="flex py-2 mx-8 text-base font-medium ud-menu-scroll text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-body-color dark:lg:text-dark-6 xl:ml-10"
                     >
                       About
                     </a>
                   </li>
-                  <li class="group relative">
+                  <li class="relative group">
                     <a
-                      href="#product"
-                      class="ud-menu-scroll mx-8 flex py-2 text-base font-medium text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10"
+                      href="/#product"
+                      class="flex py-2 mx-8 text-base font-medium ud-menu-scroll text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-body-color dark:lg:text-dark-6 xl:ml-10"
                     >
                       Products
                     </a>
                   </li>
-                  <!-- <li class="group relative">
+                  <li class="relative group">
                     <a
-                      href="#pricing"
-                      class="ud-menu-scroll mx-8 flex py-2 text-base font-medium text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10"
-                    >
-                      Pricing
-                    </a>
-                  </li> -->
-                  <li class="group relative">
-                    <a
-                      href="#team"
-                      class="ud-menu-scroll mx-8 flex py-2 text-base font-medium text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10"
+                      href="/#team"
+                      class="flex py-2 mx-8 text-base font-medium ud-menu-scroll text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-body-color dark:lg:text-dark-6 xl:ml-10"
                     >
                       Team
                     </a>
                   </li>
-                  <li class="group relative">
+                  <li class="relative group">
                     <a
-                      href="#contact"
-                      class="ud-menu-scroll mx-8 flex py-2 text-base font-medium text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10"
+                      href="/#contact"
+                      class="flex py-2 mx-8 text-base font-medium ud-menu-scroll text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-body-color dark:lg:text-dark-6 xl:ml-10"
                     >
                       Contact
                     </a>
                   </li>
-                  <!-- <li class="submenu-item group relative">
+                  <!-- <li class="relative group">
+                    <a
+                      href="blog-grids.html"
+                      class="flex py-2 mx-8 text-base font-medium ud-menu-scroll text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-body-color dark:lg:text-dark-6 xl:ml-10"
+                    >
+                      Blog
+                    </a>
+                  </li> -->
+                  <!-- <li class="relative submenu-item group">
                     <a
                       href="javascript:void(0)"
-                      class="relative mx-8 flex items-center justify-between py-2 text-base font-medium text-dark group-hover:text-primary dark:text-white lg:ml-8 lg:mr-0 lg:inline-flex lg:py-6 lg:pl-0 lg:pr-4 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10"
+                      class="relative flex items-center justify-between py-2 mx-8 text-base font-medium text-primary group-hover:text-primary lg:ml-8 lg:mr-0 lg:inline-flex lg:py-6 lg:pl-0 lg:pr-4 xl:ml-10"
                     >
                       Pages
 
@@ -154,7 +168,7 @@
                       </a>
                       <a
                         href="blog-details.html"
-                        class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary"
+                        class="block rounded px-4 py-[10px] text-sm text-primary hover:text-primary dark:hover:text-primary"
                       >
                         Blog Details Page
                       </a>
@@ -187,7 +201,6 @@
     </div>
     <!-- ====== Navbar Section End -->
 
-
     <!-- ====== Blog Details Section Start -->
     <section class="pb-10 pt-20 dark:bg-dark lg:pb-20 lg:pt-[120px]">
       <div class="container">
@@ -207,15 +220,46 @@
                     class="mb-6 text-base wow fadeInUp text-body-color dark:text-dark-6"
                     data-wow-delay=".1s"
                   >
-                  I TO R Pte Ltd, the proprietor of itor-sg.com, deeply values your patronage and is committed to safeguarding your privacy. As a respected user of our platform, we may require you to provide personal information during various interactions, including but not limited to the reservation process. The collection of such information is integral to our ability to serve your needs effectively, both through our online services and any associated offline engagements. <br /><br />
+                    I TO R Pte Ltd, the proprietor of itor-sg.com, deeply values
+                    your patronage and is committed to safeguarding your
+                    privacy. As a respected user of our platform, we may require
+                    you to provide personal information during various
+                    interactions, including but not limited to the reservation
+                    process. The collection of such information is integral to
+                    our ability to serve your needs effectively, both through
+                    our online services and any associated offline engagements.
+                    <br /><br />
 
-                  We want to assure you that any personal information provided to us, including your name, address, email address, credit card details, and transaction history, will be used strictly for the purposes outlined at the time of collection. These purposes primarily include facilitating your intended transactions, enhancing your user experience on our platform, and ensuring that our services are tailored to meet your expectations.<br /><br />
+                    We want to assure you that any personal information provided
+                    to us, including your name, address, email address, credit
+                    card details, and transaction history, will be used strictly
+                    for the purposes outlined at the time of collection. These
+                    purposes primarily include facilitating your intended
+                    transactions, enhancing your user experience on our
+                    platform, and ensuring that our services are tailored to
+                    meet your expectations.<br /><br />
 
-                  I TO R is firmly committed to protecting your privacy. We unequivocally state that we will not disclose, share, or sell your personal information to any third party, except where it is necessary to fulfill the purposes mentioned above or required by law. Any sharing of information with third-party vendors or service providers will be conducted with the utmost care and only with entities that align with our privacy standards, ensuring that your data is handled with the highest level of security and confidentiality.<br /><br />
+                    I TO R is firmly committed to protecting your privacy. We
+                    unequivocally state that we will not disclose, share, or
+                    sell your personal information to any third party, except
+                    where it is necessary to fulfill the purposes mentioned
+                    above or required by law. Any sharing of information with
+                    third-party vendors or service providers will be conducted
+                    with the utmost care and only with entities that align with
+                    our privacy standards, ensuring that your data is handled
+                    with the highest level of security and confidentiality.<br /><br />
 
-                  Our choice of vendors and partners reflects our commitment to maintaining your trust and confidence in our services. These vendors are selected based on their adherence to privacy and security standards that match our own. We strive to ensure that your experience with I TO R is not only efficient and seamless but also secure and respectful of your privacy.<br /><br />
+                    Our choice of vendors and partners reflects our commitment
+                    to maintaining your trust and confidence in our services.
+                    These vendors are selected based on their adherence to
+                    privacy and security standards that match our own. We strive
+                    to ensure that your experience with I TO R is not only
+                    efficient and seamless but also secure and respectful of
+                    your privacy.<br /><br />
 
-                  Your trust is our priority, and we take every measure to protect your personal information while providing you with the high-quality service you expect from I TO R Pte Ltd.<br /><br />
+                    Your trust is our priority, and we take every measure to
+                    protect your personal information while providing you with
+                    the high-quality service you expect from I TO R Pte Ltd.<br /><br />
                   </p>
                   <!-- <div
                     class="wow fadeInUp relative z-10 mb-10 overflow-hidden rounded-[5px] bg-primary/5 px-6 py-8 text-center sm:p-10 md:px-[60px]"
@@ -1053,7 +1097,8 @@
                 />
               </a>
               <p class="mb-8 max-w-[270px] text-base text-gray-7">
-                We transform your ideas into reality using cutting-edge technology.
+                We transform your ideas into reality using cutting-edge
+                technology.
               </p>
               <!-- <div class="-mx-3 flex items-center">
                 <a
@@ -1254,17 +1299,16 @@
           </div> -->
           <div class="w-full px-4 md:w-2/3 lg:w-6/12 xl:w-3/12">
             <div class="mb-10 w-full">
-              <h4 class="mb-9 text-lg font-semibold text-white">Latest products</h4>
+              <h4 class="mb-9 text-lg font-semibold text-white">
+                Latest products
+              </h4>
               <div class="flex flex-col gap-8">
                 <a
                   href="fall-detection.html"
                   class="group flex items-center gap-[22px]"
                 >
                   <div class="overflow-hidden rounded max-w-[70px]">
-                    <img
-                      src="./assets/images/blog/blog-02.png"
-                      alt="blog"
-                    />
+                    <img src="./assets/images/blog/blog-02.png" alt="blog" />
                   </div>
                   <span
                     class="max-w-[180px] text-base text-gray-7 group-hover:text-white"
@@ -1277,10 +1321,7 @@
                   class="group flex items-center gap-[22px]"
                 >
                   <div class="overflow-hidden rounded max-w-[70px]">
-                    <img
-                      src="./assets/images/blog/blog-03.png"
-                      alt="blog"
-                    />
+                    <img src="./assets/images/blog/blog-03.png" alt="blog" />
                   </div>
                   <span
                     class="max-w-[180px] text-base text-gray-7 group-hover:text-white"
